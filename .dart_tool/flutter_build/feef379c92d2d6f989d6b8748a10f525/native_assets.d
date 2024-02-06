@@ -1,0 +1,1 @@
+ /Users/rukaiyanishfan/moveMate_app/.dart_tool/flutter_build/feef379c92d2d6f989d6b8748a10f525/native_assets.yaml: 
