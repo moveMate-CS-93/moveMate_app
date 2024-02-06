@@ -1,0 +1,1 @@
+ C:\\Users\\rifad\\moveMate_app\\.dart_tool\\flutter_build\\06ead0cf7d060eff4abff65628de3ef3\\native_assets.yaml: 

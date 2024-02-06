@@ -10,8 +10,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(appBar: AppBar(backgroundColor: Colors.purple,
-      title: const Text("Movemate"),
+      home: Scaffold(appBar: AppBar(backgroundColor: Color.fromARGB(255, 206, 142, 213),
+      title: const Text("MoveMate Mobile Application"),
       )
       ,body: Row(
         mainAxisAlignment: MainAxisAlignment.center,
