@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:move_mate/introScreen.dart';
 
 void main(List<String> args) {
   runApp(MyApp());
@@ -10,21 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(appBar: AppBar(backgroundColor: Color.fromARGB(255, 206, 142, 213),
-      title: const Text("MoveMate Mobile Application"),
-      )
-      ,body: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: const [
-          
-          Icon(Icons.backpack),
-          Icon(Icons.leaderboard),
-          Icon(Icons.person),
-        ],
-      ),
-      ),
+      debugShowCheckedModeBanner: false,
+      routes:{
+      "/" : (context) => IntroScreen(),
+      },
     );
-
   }
 }

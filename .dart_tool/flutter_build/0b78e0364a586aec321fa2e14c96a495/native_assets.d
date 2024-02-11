@@ -1,0 +1,1 @@
+ /Users/nafla/moveMate_app/.dart_tool/flutter_build/0b78e0364a586aec321fa2e14c96a495/native_assets.yaml: 
