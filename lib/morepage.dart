@@ -73,7 +73,7 @@ class morePage extends StatelessWidget{
           height: 120,
           decoration: ShapeDecoration(
             image: DecorationImage(
-              image: NetworkImage("https://via.placeholder.com/120x120"),
+              image: NetworkImage("images/Ellipse795.png"),
               fit: BoxFit.cover,
             ),
             shape: OvalBorder(),
@@ -241,7 +241,7 @@ class morePage extends StatelessWidget{
                 width: 85,
                 height: 33,
                 child: Text(
-                  'Physiotherapist\nDetails',
+                  'Physiotherapist Details',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Color(0xFFF5F5F5),
@@ -288,7 +288,7 @@ class morePage extends StatelessWidget{
               SizedBox(
                 width: 139,
                 child: Text(
-                  'Support and \nFeedback',
+                  'Support and Feedback',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Color(0xFFF5F5F5),
