@@ -103,7 +103,7 @@ class morePage extends StatelessWidget{
                 height: 50,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage("https://via.placeholder.com/50x50"),
+                    image: NetworkImage("images/User.png"),
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -146,7 +146,7 @@ class morePage extends StatelessWidget{
                 height: 50,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage("https://via.placeholder.com/50x50"),
+                    image: NetworkImage("images/HealthBook.png"),
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -189,7 +189,7 @@ class morePage extends StatelessWidget{
                 height: 50,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage("https://via.placeholder.com/50x50"),
+                    image: NetworkImage("images/Guardian.png"),
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -232,7 +232,7 @@ class morePage extends StatelessWidget{
                 height: 60,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage("https://via.placeholder.com/67x60"),
+                    image: NetworkImage("images/PhysicalTherapy.png"),
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -279,7 +279,7 @@ class morePage extends StatelessWidget{
                 height: 50,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage("https://via.placeholder.com/50x50"),
+                    image: NetworkImage("images/OnlineSupport.png"),
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -296,258 +296,6 @@ class morePage extends StatelessWidget{
                     fontFamily: 'Ubuntu',
                     fontWeight: FontWeight.w400,
                     height: 0,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-      Positioned(
-        left: 254,
-        top: 689,
-        child: Container(
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                width: 22,
-                height: 29,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage("https://via.placeholder.com/22x29"),
-                    fit: BoxFit.contain,
-                  ),
-                ),
-              ),
-              const SizedBox(width: 4),
-              Text(
-                'Logout',
-                style: TextStyle(
-                  color: Color(0xFF7440DE),
-                  fontSize: 13,
-                  fontFamily: 'Inter',
-                  fontWeight: FontWeight.w700,
-                  height: 0,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-      Positioned(
-        left: -1,
-        top: 735,
-        child: Container(
-          width: 361,
-          height: 52.73,
-          child: Stack(
-            children: [
-              Positioned(
-                left: 12,
-                top: 0,
-                child: Container(
-                  width: 342.85,
-                  height: 52.73,
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        left: 0,
-                        top: 0,
-                        child: Opacity(
-                          opacity: 0,
-                          child: Container(
-                            width: 342.85,
-                            height: 52.73,
-                            decoration: BoxDecoration(
-                              color: Colors.white.withOpacity(0.571875274181366),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 10.38,
-                        top: 10.08,
-                        child: Container(
-                          width: 323,
-                          height: 42,
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Container(
-                                width: 47,
-                                height: 42,
-                                child: Stack(
-                                  children: [
-                                    Positioned(
-                                      left: 0,
-                                      top: 0,
-                                      child: Container(
-                                        width: 41,
-                                        height: 42,
-                                        child: Stack(
-                                          children: [
-                                            Positioned(
-                                              left: 0,
-                                              top: 26,
-                                              child: Text(
-                                                '   Home',
-                                                style: TextStyle(
-                                                  color: Color(0xFF7440DE),
-                                                  fontSize: 12,
-                                                  fontFamily: 'Ubuntu',
-                                                  fontWeight: FontWeight.w400,
-                                                  height: 0.11,
-                                                ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(width: 45),
-                              Container(
-                                width: 47,
-                                height: 42,
-                                child: Stack(
-                                  children: [
-                                    Positioned(
-                                      left: 7,
-                                      top: 26,
-                                      child: Text(
-                                        'Games',
-                                        style: TextStyle(
-                                          color: Color(0xFF7440DE),
-                                          fontSize: 12,
-                                          fontFamily: 'Ubuntu',
-                                          fontWeight: FontWeight.w400,
-                                          height: 0.11,
-                                        ),
-                                      ),
-                                    ),
-                                    Positioned(
-                                      left: 11,
-                                      top: 0,
-                                      child: Container(
-                                        width: 27.19,
-                                        height: 24,
-                                        child: Stack(children: [
-                                        ]),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(width: 45),
-                              Container(
-                                width: 47,
-                                height: 42,
-                                child: Stack(
-                                  children: [
-                                    Positioned(
-                                      left: 10,
-                                      top: 5.09,
-                                      child: Container(
-                                        width: 48,
-                                        height: 36.91,
-                                        child: Stack(
-                                          children: [
-                                            Positioned(
-                                              left: 0,
-                                              top: 20.91,
-                                              child: Text(
-                                                'Progress',
-                                                style: TextStyle(
-                                                  color: Color(0xFF7440DE),
-                                                  fontSize: 12,
-                                                  fontFamily: 'Ubuntu',
-                                                  fontWeight: FontWeight.w400,
-                                                  height: 0.11,
-                                                ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(width: 45),
-                              Container(
-                                width: 47,
-                                height: 42,
-                                child: Stack(
-                                  children: [
-                                    Positioned(
-                                      left: 9,
-                                      top: 26,
-                                      child: Text(
-                                        'More',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color(0xFFFE753E),
-                                          fontSize: 12,
-                                          fontFamily: 'Ubuntu',
-                                          fontWeight: FontWeight.w400,
-                                          height: 0.11,
-                                        ),
-                                      ),
-                                    ),
-                                    Positioned(
-                                      left: 11,
-                                      top: 0,
-                                      child: Container(
-                                        width: 24,
-                                        height: 24,
-                                        child: Stack(
-                                          children: [
-                                            Positioned(
-                                              left: 3.64,
-                                              top: 3.64,
-                                              child: Container(
-                                                width: 16.72,
-                                                height: 16.72,
-                                                child: Stack(children: [
-
-                                                ]),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 0,
-                top: 0,
-                child: Container(
-                  width: 361,
-                  decoration: ShapeDecoration(
-                    shape: RoundedRectangleBorder(
-                      side: BorderSide(
-                        width: 1,
-                        strokeAlign: BorderSide.strokeAlignCenter,
-                        color: Color(0xFF7440DE),
-                      ),
-                    ),
                   ),
                 ),
               ),
@@ -576,7 +324,7 @@ class morePage extends StatelessWidget{
                 height: 50,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage("https://via.placeholder.com/50x50"),
+                    image: NetworkImage("images/Services.png"),
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -597,6 +345,40 @@ class morePage extends StatelessWidget{
           ),
         ),
       ),
+      Positioned(
+        left: 254,
+        top: 689,
+        child: Container(
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                width: 22,
+                height: 29,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage("images/Logout.png"),
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 4),
+              Text(
+                'Logout',
+                style: TextStyle(
+                  color: Color(0xFF7440DE),
+                  fontSize: 13,
+                  fontFamily: 'Inter',
+                  fontWeight: FontWeight.w700,
+                  height: 0,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ), 
     ],
   ),
     ),
