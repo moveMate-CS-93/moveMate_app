@@ -20,21 +20,35 @@ class LoginPage extends StatelessWidget{
             ]
         )
         ),
-        child: Column(
-          //crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            SizedBox(height: 00,),
-            Padding(
-              padding: EdgeInsets.all(0),
-              child:Column(
-                
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  
-                  //SvgPicture.asset('images/name.svg', semanticsLabel: 'My SVG Image', height:200, width:200)
-                  Image(image: AssetImage("images/top.png"), height:200, width:400, ),              
-                ],
-              ),),
+       child: Column(
+  //crossAxisAlignment: CrossAxisAlignment.start,
+  children: <Widget>[
+    SizedBox(height: 0,),
+    Stack(
+      children: <Widget>[
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Image(image: AssetImage("images/deco.png"), height:160, width:225),
+        ),
+         Positioned(
+          bottom: 45,  // Adjust as needed
+          left: 125,    // Adjust as needed
+            child: Text(
+              'moveMate',
+              textAlign: TextAlign.center,
+              style: GoogleFonts.ubuntuCondensed( textStyle: 
+              TextStyle(
+                color: Colors.white,
+                fontSize: 40,
+                fontWeight: FontWeight.w400,
+                height: 0,
+                letterSpacing: 2.80,
+              ),
+              ),
+            ),
+          ),            
+      ],
+    ),
               Expanded(
                 child: Container(
                   decoration: BoxDecoration(
