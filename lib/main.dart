@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:move_mate/introScreen.dart';
+//import 'package:move_mate/introScreen.dart';
+//import 'package:move_mate/gamesIntro.dart';
+import 'package:move_mate/loginOne.dart';
+
 
 void main(List<String> args) {
   runApp(MyApp());
@@ -13,7 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes:{
-      "/" : (context) => IntroScreen(),
+      "/" : (context) => LoginPage(),//GameIntroPage(), //IntroScreen(),
+      
       },
     );
   }
