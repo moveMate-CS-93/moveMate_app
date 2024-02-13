@@ -81,8 +81,8 @@ class IntroScreen extends StatelessWidget {
           ),
         ],
         //buttons
-        onDone: (){},
-        onSkip: () {},
+        onDone: ()=> _navigateToLogin(context), // Navigate to login page when "Done" is pressed,
+        onSkip: () => _navigateToLogin(context), // Navigate to login page when "Skip" is pressed,
         showSkipButton: true,
         skip: Text("Skip", 
         style: TextStyle(
@@ -116,5 +116,8 @@ class IntroScreen extends StatelessWidget {
       ),
     );
   
+  }
+  void _navigateToLogin(BuildContext context) {
+    Navigator.pushNamed(context, '/login');
   }
 }
