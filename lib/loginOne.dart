@@ -133,7 +133,20 @@ class LoginPage extends StatelessWidget{
                           children:<Widget>[
                              SizedBox(width: 45,),
                             Text("Don't have an account? ", style:TextStyle(fontSize: 20, color: Colors.black, fontWeight: FontWeight.bold),  ),
-                            Text("Sign up", style:TextStyle(fontSize: 20, color: Color.fromRGBO(116, 64, 222, 1), fontWeight: FontWeight.bold),  ),
+                            // Text("Sign up", style:TextStyle(fontSize: 20, color: Color.fromRGBO(116, 64, 222, 1), fontWeight: FontWeight.bold),  ),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.pushNamed(context, '/signup');
+                              },
+                              child: Text(
+                                "Sign up",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  color: Color.fromRGBO(116, 64, 222, 1),
+                                  fontWeight: FontWeight.bold
+                                ),
+                              ),
+                            )
                           ]),
                       ),
 
