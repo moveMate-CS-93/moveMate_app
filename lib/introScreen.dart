@@ -48,36 +48,105 @@ class IntroScreen extends StatelessWidget {
           ),
           //page 2
           PageViewModel(
-            titleWidget: Text("Wat will this be",
+            titleWidget: Text("Craft Your Personal Profile",
             style: TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.bold, 
+              fontSize: 24,
+              fontWeight: FontWeight.w200, 
             ),
             ),
-            body: "Write more descrip apparenlty. Write more descrip apparenlty",
-            image: Image.asset("images/intro2.png", height: 400, width: 400,),
+            bodyWidget: RichText(
+              text: TextSpan(
+                children: [
+                  TextSpan(
+                    text:
+                        'Tailor Your Journey with Personalized Information\n',
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromRGBO(254, 117, 62, 1),
+                    ),
+                  ),
+                  TextSpan(
+                    text: "\nYour story matters. Create a comprehensive profile to unlock a personalized rehabilitation experience. moveMate understands your unique needs taking you beyond just an app – it's your partner in recovery.",
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Color.fromRGBO(55, 71, 79, 1)
+,
+                   ),
+                  ),
+                ],
+              ),
+            ),
+            image: Image.asset("images/intro2.png",  height: 300,
+              width: 322.21,),
           ),
           //page 3
           PageViewModel(
-            titleWidget: Text("Wat will this be",
+            titleWidget: Text("Track Your Rehabilitation Journey",
             style: TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.bold, 
+              fontSize: 24,
+              fontWeight: FontWeight.w200, 
             ),
             ),
-            body: "Write more descrip apparenlty. Write more descrip apparenlty",
-            image: Image.asset("images/intro3.png", height: 400, width: 400,),
+            bodyWidget: RichText(
+              text: TextSpan(
+                children: [
+                  TextSpan(
+                    text:
+                        'Witness Your Achievements Unfold Over Time\n',
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromRGBO(254, 117, 62, 1),
+                    ),
+                  ),
+                  TextSpan(
+                    text: "\n See your progress come to life. Movemate empowers you with real-time monitoring, encouraging your efforts and celebrating every step forward. Your success is our priority.",
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Color.fromRGBO(55, 71, 79, 1)
+,
+                   ),
+                  ),
+                ],
+              ),
+            ),
+            image: Image.asset("images/intro3.png", height: 300,
+              width: 322.21,),
           ),
           //page 4
           PageViewModel(
-            titleWidget: Text("Wat will this be",
+            titleWidget: Text("Explore a Universe of Rehabilitation",
             style: TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.bold, 
+              fontSize: 24,
+              fontWeight: FontWeight.w200, 
             ),
             ),
-            body: "Write more descrip apparenlty. Write more descrip apparenlty",
-            image: Image.asset("images/intro4.png", height: 400, width: 400,),
+            bodyWidget: RichText(
+              text: TextSpan(
+                children: [
+                  TextSpan(
+                    text:
+                        "From Rewards to Real-time Feedback - Your Journey, Your Way\n",
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromRGBO(254, 117, 62, 1),
+                    ),
+                  ),
+                  TextSpan(
+                    text: "\n Dive into a world of variety and innovation. Movemate offers not just exercises but an interactive universe of rehabilitation, complete with rewards, guidance, and engaging games. Your comeback starts here.",
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Color.fromRGBO(55, 71, 79, 1)
+,
+                   ),
+                  ),
+                ],
+              ),
+            ),
+            image: Image.asset("images/intro4.png", height: 300,
+              width: 322.21,),
           ),
         ],
         //buttons
