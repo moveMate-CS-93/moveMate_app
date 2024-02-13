@@ -30,7 +30,7 @@ class LoginPage extends StatelessWidget{
           child: Image(image: AssetImage("images/deco.png"), height:160, width:225),
         ),
          Positioned(
-          bottom: 45,  // Adjust as needed
+          bottom: 40,  // Adjust as needed
           left: 125,    // Adjust as needed
             child: Text(
               'moveMate',
