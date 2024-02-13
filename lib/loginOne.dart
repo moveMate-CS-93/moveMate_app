@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:move_mate/reusables.dart';
 import 'package:move_mate/utils.dart';
 //import 'package:flutter_svg/svg.dart';
 
@@ -84,7 +85,7 @@ class LoginPage extends StatelessWidget{
                             child: TextField(
                               decoration: InputDecoration(
                                 hintText: " name@example.com",
-                                hintStyle: TextStyle(color:Colors.grey ,fontSize: 20),
+                                hintStyle: TextStyle(color:Colors.grey ,fontSize: 17),
                                 border: InputBorder.none
                               ),
                             )
@@ -112,7 +113,7 @@ class LoginPage extends StatelessWidget{
                               obscureText: true,
                               decoration: InputDecoration(
                                 hintText: " min. 8 characters",
-                                hintStyle: TextStyle(color:Colors.grey ,fontSize: 20),
+                                hintStyle: TextStyle(color:Colors.grey ,fontSize: 17),
                                 border: InputBorder.none
                               ),
                             )
@@ -120,20 +121,9 @@ class LoginPage extends StatelessWidget{
                         ]),      
                       ),
 
-                      SizedBox(height: 30,),
-                      Container(
-                        padding: EdgeInsets.all(12),
-                        decoration: BoxDecoration(
-                          color: const Color.fromRGBO(116, 64, 222, 1),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: Row(
-                          children:<Widget>[
-                          SizedBox(width: 150,) ,
-                          Text("LOGIN", style:TextStyle(fontSize: 17, color: Colors.white, fontWeight: FontWeight.bold), textAlign: TextAlign.center,  ),
-                          ]),
-                      ),
-
+                      SizedBox(height: 15,),
+                      signInUpButton(context,true, () {}),
+                      
                       SizedBox(height: 20,),
                       Text("Forgot password?", style:TextStyle(fontSize: 20, color: Color.fromRGBO(116, 64, 222, 1), fontWeight: FontWeight.bold),  ),
 
@@ -156,9 +146,6 @@ class LoginPage extends StatelessWidget{
                             Text("Terms and Conditions and Privacy Policy", style:TextStyle(fontSize: 13, color: Color.fromRGBO(116, 64, 222, 1),),  ),
                           ]),
                       ),
-                      
-
-
                     ],
                   )
                 ),
