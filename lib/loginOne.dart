@@ -21,7 +21,6 @@ class LoginPage extends StatelessWidget{
         )
         ),
        child: Column(
-  //crossAxisAlignment: CrossAxisAlignment.start,
   children: <Widget>[
     SizedBox(height: 0,),
     Stack(
