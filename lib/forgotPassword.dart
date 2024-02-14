@@ -137,18 +137,18 @@ class ForgotPassword extends StatelessWidget{
 
                           // Text("Back to login", style:TextStyle(fontSize: 17, color:Color.fromRGBO(116, 64, 222, 1), fontWeight: FontWeight.bold), textAlign: TextAlign.center,  ),
                           GestureDetector(
-  onTap: () {
-    Navigator.pushNamed(context, '/login');
-  },
-  child: Text(
-    "Back to login",
-    style: TextStyle(
-      fontSize: 20,
-      color: Color.fromRGBO(116, 64, 222, 1),
-      fontWeight: FontWeight.bold
-    ),
-  ),
-),
+                          onTap: () {
+                            Navigator.pushNamed(context, '/login');
+                          },
+                          child: Text(
+                            "Back to login",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Color.fromRGBO(116, 64, 222, 1),
+                              fontWeight: FontWeight.bold
+                            ),
+                          ),
+                        ),
 
                         ]),
 
