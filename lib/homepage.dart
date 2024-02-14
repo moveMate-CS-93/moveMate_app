@@ -151,12 +151,12 @@ class homePage extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      bottom: 5, // Adjust as needed
-                      right: 10, // Adjust as needed
+                      bottom: 5,
+                      right: 10,
                       child: Icon(
-                        Icons.arrow_forward, // Arrow icon
+                        Icons.arrow_forward,
                         color: Colors.white,
-                        size: 24, // Adjust as needed
+                        size: 24,
                       ),
                     ),
                   ],
@@ -186,7 +186,6 @@ class homePage extends StatelessWidget {
                       progressColor: Color(0xFFFD8C5E),
                       percent: 0.6, //this would change according to user data
                       center: Center(
-                        // Use a Center widget
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -267,44 +266,196 @@ class homePage extends StatelessWidget {
                 ),
               ),
             ),
-          Positioned(
-  left: 21.05,
-  top: 569,
-  child: Container(
-    child: Row(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Padding(
-          padding: EdgeInsets.all(8.0),  // Adjust as needed
-          child: SizedBox(
-            width: (MediaQuery.of(context).size.width - 100),
-            height: 23.68,
-            child: Text(
-              'What would you like to do today?',
-              style: TextStyle(
-                color: Color(0xFF7440DE),
-                fontSize: 16,
-                fontFamily: 'Ubuntu',
-                fontWeight: FontWeight.w500,
-                height: 0,
+            Positioned(
+              left: 21.05,
+              top: 569,
+              child: Container(
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: SizedBox(
+                        width: (MediaQuery.of(context).size.width - 100),
+                        height: 23.68,
+                        child: Text(
+                          'What would you like to do today?',
+                          style: TextStyle(
+                            color: Color(0xFF7440DE),
+                            fontSize: 16,
+                            fontFamily: 'Ubuntu',
+                            fontWeight: FontWeight.w500,
+                            height: 0,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.all(5.0),
+                      child: Icon(
+                        Icons.arrow_forward, // Arrow icon
+                        color: Color(0xFF7440DE), // Same color as the text
+                        size: 24,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
-        ),
-        Padding(
-          padding: EdgeInsets.all(5.0),  // Adjust as needed
-          child: Icon(
-            Icons.arrow_forward,  // Arrow icon
-            color: Color(0xFF7440DE),  // Same color as the text
-            size: 24,  // Adjust as needed
-          ),
-        ),
-      ],
-    ),
-  ),
-),
+            //horizontal scroll bar
+            Positioned(
+              left: 21,
+              top: 600,
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(8.0, 10.0, 8.0, 4.0),
+                child: SizedBox(
+                  height: 200,
+                  width: MediaQuery.of(context)
+                      .size
+                      .width, // This will take the full width of the screen
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Container(
+                          height: 260,
+                          width: 160,
+                          decoration: ShapeDecoration(
+                            color: Color(0xFFD4BFFF),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          ),
+                          
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: <Widget>[
+                              Container(
+                                height: 120,
+                                child: Image.asset('images/gameicon.png'),
+                              ),
+                              SizedBox(height: 10),
+                              Text(
+                                'Games',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Color(0xFF7440DE),
+                                  fontSize: 16,
+                                  fontFamily: 'Ubuntu',
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Container(
+                          height: 260,
+                          width: 160,
+                          decoration: ShapeDecoration(
+                            color: Color(0xFFD4BFFF),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          ),
+                       child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: <Widget>[
+                              Container(
+                                height: 120,
+                                child: Image.asset('images/exercise.png'),
+                              ),
+                              SizedBox(height: 10),
+                              Text(
+                                'Guardian Details',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Color(0xFF7440DE),
+                                  fontSize: 16,
+                                  fontFamily: 'Ubuntu',
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Container(
+                          height: 260,
+                          width: 160,
+                          decoration: ShapeDecoration(
+                            color: Color(0xFFD4BFFF),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          ),
+                       child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: <Widget>[
+                              Container(
+                                height: 120,
+                                child: Image.asset('images/progressicon.png'),
+                              ),
+                              SizedBox(height: 10),
+                              Text(
+                                'Progress reports',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Color(0xFF7440DE),
+                                  fontSize: 16,
+                                  fontFamily: 'Ubuntu',
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Container(
+                          height: 260,
+                          width: 160,
+                          decoration: ShapeDecoration(
+                            color: Color(0xFFD4BFFF),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          ),
+                        child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: <Widget>[
+                              Container(
+                                height: 130,
+                                child: Image.asset('images/profileicon.png'),
+                              ),
+                              SizedBox(height: 2),
+                              Text(
+                                'Profile',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Color(0xFF7440DE),
+                                  fontSize: 16,
+                                  fontFamily: 'Ubuntu',
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
