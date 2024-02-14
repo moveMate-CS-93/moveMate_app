@@ -135,7 +135,20 @@ class ForgotPassword extends StatelessWidget{
 
                           SizedBox(width:400,height: 30,),
 
-                          Text("Back to login", style:TextStyle(fontSize: 17, color:Color.fromRGBO(116, 64, 222, 1), fontWeight: FontWeight.bold), textAlign: TextAlign.center,  ),
+                          // Text("Back to login", style:TextStyle(fontSize: 17, color:Color.fromRGBO(116, 64, 222, 1), fontWeight: FontWeight.bold), textAlign: TextAlign.center,  ),
+                          GestureDetector(
+  onTap: () {
+    Navigator.pushNamed(context, '/login');
+  },
+  child: Text(
+    "Back to login",
+    style: TextStyle(
+      fontSize: 20,
+      color: Color.fromRGBO(116, 64, 222, 1),
+      fontWeight: FontWeight.bold
+    ),
+  ),
+),
 
                         ]),
 

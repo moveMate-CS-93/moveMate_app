@@ -138,8 +138,21 @@ class LoginPage extends StatelessWidget{
                       signInUpButton(context,true, () {}),
                       
                       SizedBox(height: 20,),
-                      Text("Forgot password?", style:TextStyle(fontSize: 20, color: Color.fromRGBO(116, 64, 222, 1), fontWeight: FontWeight.bold),  ),
-
+                      // Text("Forgot password?", style:TextStyle(fontSize: 20, color: Color.fromRGBO(116, 64, 222, 1), fontWeight: FontWeight.bold),  ),
+                      GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/forgotpassword');
+                      },
+                      child: Text(
+                        "Forgot password?",
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Color.fromRGBO(116, 64, 222, 1),
+                          fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                    
                       SizedBox(height: 115,),
                       Container(
                         child: Row(

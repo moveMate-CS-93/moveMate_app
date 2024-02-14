@@ -23,10 +23,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			Kc6j4CvLVZ2NibDLx9JR8fyd9ng=
+			ah7VkDAZ5jBLyd7+mm68mecGndA=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"29cea3e02bcb559d8d89b0cbc7d251f1fc9df678"</string>
+			<string>cdhash H"6a1ed5903019e6304bc9defe9a6ebc99e7069dd0"</string>
 		</dict>
 		<key>Frameworks/FlutterMacOS.framework</key>
 		<dict>
@@ -189,6 +189,15 @@
 			</data>
 			<key>requirement</key>
 			<string>cdhash H"3406aab10f486b91c2d9334de341504de56a5631" or cdhash H"73e04119822f2d8cd5eeb426ddac2b2b98295def"</string>
+		</dict>
+		<key>Frameworks/path_provider_foundation.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			tuJW8TN7ily950FjBHzrB/6WTvA=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"b6e256f1337b8a5cbde74163047ceb07fe964ef0"</string>
 		</dict>
 		<key>Resources/AppIcon.icns</key>
 		<dict>
