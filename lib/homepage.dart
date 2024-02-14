@@ -150,6 +150,15 @@ class homePage extends StatelessWidget {
                         ),
                       ),
                     ),
+                    Positioned(
+                      bottom: 5, // Adjust as needed
+                      right: 10, // Adjust as needed
+                      child: Icon(
+                        Icons.arrow_forward, // Arrow icon
+                        color: Colors.white,
+                        size: 24, // Adjust as needed
+                      ),
+                    ),
                   ],
                 ),
               ),
