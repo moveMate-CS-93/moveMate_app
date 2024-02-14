@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class homePage extends StatelessWidget {
   @override
@@ -164,6 +165,55 @@ class homePage extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
+                ),
+                child: Column(
+                  mainAxisAlignment:
+                      MainAxisAlignment.center, // Center align everything
+                  children: [
+                    CircularPercentIndicator(
+                      radius: 74,
+                      lineWidth: 13,
+                      backgroundColor: Color(0xFFFAFAFA),
+                      progressColor: Color(0xFFFD8C5E),
+                      percent: 0.6, //this would change according to user data
+                      center: Center(
+                        // Use a Center widget
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(bottom: 5.0),
+                              child: Text(
+                                "60%",
+                                style: TextStyle(
+                                  color: Color(0xFF7440DE),
+                                  fontSize: 20,
+                                  fontFamily: 'Ubuntu',
+                                  fontWeight: FontWeight.w700,
+                                  height: 0,
+                                ),
+                              ),
+                            ),
+                            Text(
+                              'Hand Movement Improvement',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: Color(0xFF7440DE),
+                                fontSize: 12,
+                                fontFamily: 'Ubuntu',
+                                fontWeight: FontWeight.w400,
+                                height: 0,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      circularStrokeCap: CircularStrokeCap.round,
+                      //animation
+                      animation: true,
+                      animationDuration: 1000,
+                    ),
+                  ],
                 ),
               ),
             ),

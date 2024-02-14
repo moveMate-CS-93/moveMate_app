@@ -236,6 +236,12 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "percent_indicator",
+      "rootUri": "file:///Users/rukaiyanishfan/.pub-cache/hosted/pub.dev/percent_indicator-4.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "petitparser",
       "rootUri": "file:///Users/rukaiyanishfan/.pub-cache/hosted/pub.dev/petitparser-6.0.2",
       "packageUri": "lib/",
@@ -356,7 +362,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-02-13T18:33:08.240544Z",
+  "generated": "2024-02-14T05:36:18.343626Z",
   "generator": "pub",
   "generatorVersion": "3.2.6"
 }
