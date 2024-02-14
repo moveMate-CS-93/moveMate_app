@@ -267,6 +267,44 @@ class homePage extends StatelessWidget {
                 ),
               ),
             ),
+          Positioned(
+  left: 21.05,
+  top: 569,
+  child: Container(
+    child: Row(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Padding(
+          padding: EdgeInsets.all(8.0),  // Adjust as needed
+          child: SizedBox(
+            width: (MediaQuery.of(context).size.width - 100),
+            height: 23.68,
+            child: Text(
+              'What would you like to do today?',
+              style: TextStyle(
+                color: Color(0xFF7440DE),
+                fontSize: 16,
+                fontFamily: 'Ubuntu',
+                fontWeight: FontWeight.w500,
+                height: 0,
+              ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.all(5.0),  // Adjust as needed
+          child: Icon(
+            Icons.arrow_forward,  // Arrow icon
+            color: Color(0xFF7440DE),  // Same color as the text
+            size: 24,  // Adjust as needed
+          ),
+        ),
+      ],
+    ),
+  ),
+),
           ],
         ),
       ),
