@@ -20,21 +20,33 @@ class ForgotPassword extends StatelessWidget{
           //crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             SizedBox(height: 00,),
-            Padding(
-              padding: EdgeInsets.all(0),
-              child:Column(
-                
-                crossAxisAlignment: CrossAxisAlignment.start,
-                
-                children: <Widget>[
-                  
-                  
-                  SizedBox(height: 80,),
-                  Text("moveMate", style:GoogleFonts.ubuntuCondensed( textStyle:TextStyle( fontSize: 40, color: Colors.white, fontWeight: FontWeight.bold), ), ),
-                  SizedBox(height: 40,),
-                  //Image(image: AssetImage("images/top.png"), height:200, width:400, ),              
-                ],
-              ),
+            Stack(
+              children: <Widget>[
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Image(
+                      image: AssetImage("images/deco.png"),
+                      height: 160,
+                      width: 225),
+                ),
+                Positioned(
+                  bottom: 40, // Adjust as needed
+                  left: 125, // Adjust as needed
+                  child: Text(
+                    'moveMate',
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.ubuntuCondensed(
+                      textStyle: TextStyle(
+                        color: Colors.white,
+                        fontSize: 40,
+                        fontWeight: FontWeight.w400,
+                        height: 0,
+                        letterSpacing: 2.80,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
             Expanded(
               child: Container(
@@ -53,7 +65,7 @@ class ForgotPassword extends StatelessWidget{
                         padding: EdgeInsets.all(12),
                         decoration: BoxDecoration(
                           color:  Colors.white,
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(20),
                           boxShadow: [
                             BoxShadow(
                               color: Colors.grey.withOpacity(0.5),
@@ -66,7 +78,7 @@ class ForgotPassword extends StatelessWidget{
                         
                         child: Column(
                           children:<Widget>[
-                            SizedBox(width:400,) ,
+                            SizedBox(width:400,height: 20,) ,
                             Text("Forgot your password?", style:TextStyle(fontSize: 25, color: Colors.black, fontWeight: FontWeight.bold), textAlign: TextAlign.center,  ),
                             SizedBox(width:400,height: 40,) ,
                             Align(
@@ -76,7 +88,7 @@ class ForgotPassword extends StatelessWidget{
                             SizedBox(width:400,height:20,) ,
                             Align(
                               alignment: Alignment.centerLeft,
-                              child: Text("Enter email address", style: TextStyle(fontSize: 15 , fontWeight: FontWeight.bold)),
+                              child: Text("Enter email address", style: TextStyle(fontSize: 15,)),
                             ),
                             SizedBox(width:400,height: 10,) ,
 
@@ -92,7 +104,7 @@ class ForgotPassword extends StatelessWidget{
                                 Container(
                                   child: TextField(
                                     decoration: InputDecoration(
-                                      hintText: " Email",
+                                      hintText: " name@example.com",
                                       hintStyle: TextStyle(color:Colors.grey ,fontSize: 17),
                                       border: InputBorder.none
                                     ),
@@ -102,7 +114,7 @@ class ForgotPassword extends StatelessWidget{
                             ),
                           ),
 
-                          SizedBox(width:400,height: 10,) ,
+                          SizedBox(width:400,height: 30,) ,
 
                           Container(
                             width: MediaQuery.of(context).size.width,
@@ -115,6 +127,73 @@ class ForgotPassword extends StatelessWidget{
                             child: ElevatedButton(
                               onPressed: () {
                                 //onTap();
+                                showModalBottomSheet(context: context, builder:(BuildContext context){
+                                  return Container(
+                                    height: 500,
+                                     decoration: BoxDecoration(
+                                            //color: const Color.fromRGBO(116, 64, 222, 1),
+                                            borderRadius: BorderRadius.circular(60),
+                                            color: Colors.white,
+                                          ),
+                                    
+                                    child: Column(
+                                      children: <Widget>[
+                                        SizedBox(height: 50,),
+                                        Image(image: AssetImage("images/greenTick.png"), height: 100, width: 100,),
+                                        SizedBox(height: 15,),
+                                        Text("Email Sent!", style: TextStyle(fontSize: 40, color:Color.fromRGBO(116, 64, 222, 1.0) ),),
+                                        SizedBox(height: 25,),
+                                        Center(
+                                          child: Text(
+                                            "Reset link sent to your email. Please check", 
+                                            style: TextStyle(fontSize: 15,),
+                                          ),
+                                        ), 
+                                        Center(
+                                          child: Text(
+                                            "your inbox.For any issues, contact support", 
+                                            style: TextStyle(fontSize: 15,),
+                                          ),
+                                        ),  
+                                        Center(
+                                          child: Text(
+                                            "Thank you!", 
+                                            style: TextStyle(fontSize: 15,),
+                                          ),
+                                        ), 
+                                        SizedBox(height: 45,),
+                                        Container(
+                                          width: MediaQuery.of(context).size.width,
+                                          height: 70,
+                                          padding: EdgeInsets.all(12),
+                                          decoration: BoxDecoration(
+                                            //color: const Color.fromRGBO(116, 64, 222, 1),
+                                            borderRadius: BorderRadius.circular(10),
+                                          ),
+                                          child: ElevatedButton(
+                                            onPressed: () {
+                                              Navigator.pop(context);
+                                            },
+                                            child: Text(
+                                              "Done",
+                                              style: const TextStyle(
+                                                fontSize: 17, color: Colors.white, fontWeight: FontWeight.bold), 
+                                              ),
+                                            style: ButtonStyle(
+                                              backgroundColor: MaterialStateProperty.resolveWith((states) {
+                                                if (states.contains(MaterialState.pressed)){
+                                                  return Color.fromRGBO(254, 117, 62, 1);
+                                                }
+                                                return Color.fromRGBO(116, 64, 222, 1);
+                                              }),
+                                              shape:MaterialStateProperty.all<RoundedRectangleBorder>(
+                                                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)))),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  );
+                                });
                               },
                               child: Text(
                                 "REQUEST RESET LINK",
@@ -135,20 +214,9 @@ class ForgotPassword extends StatelessWidget{
 
                           SizedBox(width:400,height: 30,),
 
-                          // Text("Back to login", style:TextStyle(fontSize: 17, color:Color.fromRGBO(116, 64, 222, 1), fontWeight: FontWeight.bold), textAlign: TextAlign.center,  ),
-                          GestureDetector(
-                          onTap: () {
-                            Navigator.pushNamed(context, '/login');
-                          },
-                          child: Text(
-                            "Back to login",
-                            style: TextStyle(
-                              fontSize: 20,
-                              color: Color.fromRGBO(116, 64, 222, 1),
-                              fontWeight: FontWeight.bold
-                            ),
-                          ),
-                        ),
+                          Text("Back to login", style:TextStyle(fontSize: 17, color:Color.fromRGBO(116, 64, 222, 1), fontWeight: FontWeight.bold), textAlign: TextAlign.center,  ),
+
+                          SizedBox(width:400,height: 30,) ,
 
                         ]),
 
@@ -165,3 +233,4 @@ class ForgotPassword extends StatelessWidget{
     );
   }
 }
+
