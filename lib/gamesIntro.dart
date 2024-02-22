@@ -41,20 +41,19 @@ class GameIntroPage extends StatelessWidget {
 
             child: Image.asset(
               'images/flappybig.png',
-              fit: BoxFit
-                  .cover, // This will make the image cover the entire container
+              fit: BoxFit.cover, // This will make the image cover the entire container
             ),
           ),
           Positioned(
             left: 9,
             top: 30,
-            child: IconButton(
+            child: IconButton( //combination of icon+widget
               icon: Icon(
                 Icons.arrow_back,
                 color: Colors.white,
               ),
               onPressed: () {
-                //route
+                Navigator.pushNamed(context, '/gamepage');
               },
             ),
           ),
