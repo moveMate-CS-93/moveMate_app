@@ -63,9 +63,11 @@ class LoginPage extends StatelessWidget {
                       padding: EdgeInsets.all(20),
                       child: Column(
                         children: <Widget>[
+
                           SizedBox(
                             height: 10,
                           ),
+
                           Text(
                             "Login",
                             style: TextStyle(
@@ -76,14 +78,24 @@ class LoginPage extends StatelessWidget {
                           SizedBox(
                             height: 30,
                           ),
-                          Container(
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(10),
-                                border: Border.all(
-                                  color: Colors.orange,
-                                )),
+
+                          ElevatedButton(
+                            
+                            onPressed: () {
+                             
+                            },
+
+                            style: ButtonStyle(
+                              padding: MaterialStateProperty.resolveWith((states) => EdgeInsets.all(10)),
+                              backgroundColor: MaterialStateProperty.resolveWith((states) => Colors.white),
+                              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  side: BorderSide(color: Colors.orange),
+                                ),
+                              ),
+                            ),
+
                             child: Row(children: <Widget>[
                               SizedBox(
                                 width: 75,
@@ -97,17 +109,20 @@ class LoginPage extends StatelessWidget {
                                     fontWeight: FontWeight.bold),
                               ),
                             ]),
+
                           ),
 
                           SizedBox(
                             height: 12,
                           ),
+
                           Align(
                             alignment: Alignment.centerLeft,
                             child: Text("Email",
                                 style: TextStyle(
                                     fontSize: 15, fontWeight: FontWeight.bold)),
                           ),
+
                           Container(
                             padding: EdgeInsets.all(1),
                             decoration: BoxDecoration(
@@ -161,6 +176,7 @@ class LoginPage extends StatelessWidget {
                           SizedBox(
                             height: 15,
                           ),
+                          
                           signInUpButton(context, true, () {
                             Navigator.pushNamed(context, '/homepage');
                           }),
@@ -168,6 +184,7 @@ class LoginPage extends StatelessWidget {
                           SizedBox(
                             height: 20,
                           ),
+
                           // Text("Forgot password?", style:TextStyle(fontSize: 20, color: Color.fromRGBO(116, 64, 222, 1), fontWeight: FontWeight.bold),  ),
                           GestureDetector(
                             onTap: () {
