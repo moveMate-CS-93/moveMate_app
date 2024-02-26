@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "559450667948",
+    "project_id": "move-mate-app",
+    "storage_bucket": "move-mate-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559450667948:android:8bec8d13f62b8a9e8d5809",
+        "android_client_info": {
+          "package_name": "com.example.move_mate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv1-LeISURD5e6C4HOeyOXOLUg14nF-sQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
